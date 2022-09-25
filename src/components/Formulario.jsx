@@ -1,6 +1,9 @@
 import { Button, Form, Row, Col, Alert } from 'react-bootstrap'
-
+import { useState} from 'react'
+import useCategorias from '../hooks/useCategorias'
 export default function Formulario() {
+    
+    const {categorias } = useCategorias()
   return (
     <Form>
         <Row>
@@ -34,13 +37,13 @@ export default function Formulario() {
                     // })}
                 >
                     <option>- Selecciona Categoria -</option>
-                    {/* {categorias.map(categoria => (
+                    {categorias.map(categoria => (
                         <option
                             key={categoria.strCategory}
                             value={categoria.strCategory}
                         >{categoria.strCategory}
                         </option>
-                    ))} */}
+                    ))}
                 </Form.Select>
                 </Form.Group>
             </Col>

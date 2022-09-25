@@ -1,5 +1,5 @@
 import { Container, ModalBody } from 'react-bootstrap'
-import Formulario from './components/Formulario'
+import Formulario from './components/Formulario.jsx'
 import { CategoriasProvider } from './context/CategoriasProvider'
 function App() {
 
